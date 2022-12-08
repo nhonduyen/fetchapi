@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Fetch Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Fetch</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+      </ul>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch" target="_blank">Fetch Document</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+<div class="container-fluid bg-3 text-center">    
+  <div class="row">
+    <div class="col-sm-3">
+      <p>Fetch GET</p>
+      <button type="button" id="btnGet" class="btn btn-primary">GET</button>
+    </div>
+    <div class="col-sm-3"> 
+        <p>Fetch POST</p>
+        <button type="button" id="btnPost" class="btn btn-success">POST</button>
+    </div>
+    <div class="col-sm-3"> 
+        <p>Fetch PUT</p>
+        <button type="button" id="btnPut" class="btn btn-info">PUT</button>
+    </div>
+    <div class="col-sm-3">
+        <p>Fetch DELETE</p>
+        <button type="button" id="btnDelete" class="btn btn-danger">DELETE</button>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid bg-3 text-center">    
+    <div class="row">
+      <div class="col-sm-3">
+        <p>Fetch PATCH</p>
+        <button type="button" id="btnPatch" class="btn btn-warning">PATCH</button>
+      </div>
+      <div class="col-sm-3"> 
+          <p>Upload image</p>
+          <input class="form-control" type="file" id="formFile" accept="image/*">
+      </div>
+      <div class="col-sm-3"> 
+          <p>Fetch</p>
+      </div>
+      <div class="col-sm-3">
+          <p>Fetch</p>
+      </div>
+    </div>
+</div>
+
+<div class="container-fluid bg-3 text-center">    
+    <div class="row">
+      <label id="result"></label>
+  </div>
+
+<script src="./fetch.js" async defer></script>
+<script src="./main.js" async defer></script>
+</body>
+</html>
